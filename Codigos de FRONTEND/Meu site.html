@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <title>title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Aulas De Informatica</h1>
-    <p>
-        <label for="Nome"> Digite seu Nome
+    <div id="centro">
+        <h1>Aulas De Informatica</h1>
+        <p>
+            <label for="Nome"> Seu nome:
             <input type="text">
-        </label>
-    </p>
+            </label>
+        </p>
 
-    <p>
-        <label for="Endereço"> Digite seu Endereço
-            <input type="text">
-        </label>
+        <p>
+            <label for="Endereço"> Digite seu Endereço
+                <input type="text">
+            </label>
         <p>
             <label for="numero">Escolha seu número:
                 <input type="range" id="numero" min="0" max="99999999999" value="0">
@@ -27,13 +29,12 @@
             const rangeInput = document.getElementById('numero');
             const valorDisplay = document.getElementById('valor');
     
-            // Função para formatar o número como telefone
+          
             function formatarComoTelefone(numero) {
-                const numeroString = numero.toString().padStart(11, '0'); // Preenche com zeros à esquerda
-                const ddd = numeroString.slice(0, 2); // Pega os dois primeiros números como DDD
-                const parte1 = numeroString.slice(2, 7); // Pega os próximos 5 números
-                const parte2 = numeroString.slice(7); // Pega os últimos 4 números
-    
+                const numeroString = numero.toString().padStart(11, '0'); 
+                const ddd = numeroString.slice(0, 2); 
+                const parte1 = numeroString.slice(2, 7); 
+                const parte2 = numeroString.slice(7); 
                 return `(${ddd}) ${parte1}-${parte2}`;
             }
     
@@ -42,17 +43,16 @@
                 valorDisplay.textContent = numeroFormatado;
             });
         </script>
-
-    
     </p>
+    </div>
     
-    
-<h2> Nossos Tecnicos </h2>
-    <p>
-        <p> 
-            <p>Tue Manutenções</p>
-            <input type="image" src="https://i.ytimg.com/vi/TYocRWmi9aM/hqdefault.jpg" height="200" width="auto"> 
-        </p> 
+    <div id="alinhado">
+            <h2> Nossos Tecnicos </h2>
+        <p>
+            <p> 
+                <p>Tue Manutenções</p>
+                <input type="image" src="https://i.ytimg.com/vi/TYocRWmi9aM/hqdefault.jpg" height="200" width="auto"> 
+            </p> 
         <p> 
             <p>Valnderlei Ramos</p>
             <input type="image" src="https://media.licdn.com/dms/image/C4D03AQEEcCr2TYBIlQ/profile-displayphoto-shrink_800_800/0/1517569532405?e=2147483647&v=beta&t=QzthhFvFuuno2HWAbGO_wWCKYpwbK89lPILbdQCKtWo" height="200" width="auto"> 
@@ -61,13 +61,16 @@
             <p>Eduardo Koffeneir Rocha</p>
             <input type="image" src="https://i.ytimg.com/vi/nJo_0dVnk6Y/maxresdefault.jpg" height="200" width="auto"> 
         </p>
-    </p>
-    <h2> Nosso Fundador </h2>
-    <p>
+        </p>
+            <h2> Nosso Fundador </h2>
+        <p>
         <p>Felipe Quebra Codigos</p>
         <p><input type="image" src="https://dev-beta.quizur.com/storage/v1/render/image/public/imagens/20084847/73cecf4a-97f7-4417-bfa6-37f6ea200c24.png?width=800&quality=75" width="500" height="auto"></p>
         <p><h4>Felipe Quebra codigos é o fundador da nossa organização. Seu destaque em quebrar codigos é fenomenal!</h4></p>
     </p>
+    </div>
+    
+
 
 
 
