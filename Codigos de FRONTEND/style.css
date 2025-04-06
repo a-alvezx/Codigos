@@ -1,15 +1,89 @@
 body
     {
-        background-color: rgb(39, 39, 87);
+        
+        background: 
+            linear-gradient(rgb(27, 8, 49), rgba(0, 0, 0, 0.658)), 
+            url('https://media1.tenor.com/m/M4T6_KH_GWMAAAAd/calma-calabreso-calma-calma-calabreso.gif;');
+        background-size: cover;
+        background-position: center;
         font: normal 15pt Calibri;
         color: white;
         
     }
 
-
-
 #centro
-{
-    text-align: center;
+    {
+        text-align: center;
+        background-color: rgba(70, 14, 201, 0.384);
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    }
 
-}
+    #alinhado 
+        {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }   
+
+    #item
+        {
+            text-align: center;
+        }
+
+    #item img
+        {
+            width: 255px;
+            height: 255px;
+            margin: auto;
+            border-radius: 1000px;
+        }
+    #item p
+        {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+
+    #conteiner
+        {
+            text-align: center;
+            background-color: rgba(70, 14, 201, 0.384);
+            border-radius: 100px;
+            padding: 15px;
+            width: 1000px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+        }
+
+    #text
+        {
+            background-color: rgba(21, 10, 48, 0.664);
+            border-radius: 100px;
+            padding: 25px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            height: 300px;
+            text-align: left;
+            display: flex;
+        }
+   
+    #text p 
+        {
+            text-align: justify;
+            font-size: 24px;
+            padding: 24px;
+        }   
+
+    #text img
+        {
+            width: 250px;
+            height: 250px;
+            border-radius: 1000px;
+        }
