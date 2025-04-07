@@ -1,86 +1,121 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Aulas de Informatica</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="centro">
-        <div></div>
-        <h1>Aulas De Informatica</h1>
-        <p>
-            <label for="Nome"> Seu nome:
-            <input type="text">
-            </label>
-        </p>
 
-        <p>
-            <label for="Endereço"> Digite seu Endereço
-                <input type="text">
-            </label>
-        <p>
-            <label for="numero">Escolha seu número:
-                <input type="range" id="numero" min="0" max="99999999999" value="0">
-            </label>
-            <span id="valor">(00) 00000-0000</span>
-        </p>
+<body>
+    <div id="cabeçalho">
+        <div id="cabeçalho2">
+            <h1>Escola de Informatica</h1>
+            <h2>Santa Paciencia</h2>
+        </div>
+        <div id="cabeçalho3">   
+            <h2>Aprenda a programar com a gente!</h2>            
+            <p>Aprenda a programar com a gente! Aqui você vai aprender a programar de verdade, com aulas práticas e
+            dinâmicas. Venha fazer parte da nossa equipe!</p>
+        </div>
+    </div>
     
+    
+    
+    
+    <div id="centro">
+        <div id="texto">
+            <h1>Faça seu cadastro!</h1>
+            <p>
+                <label for="Nome"> Seu nome:
+                    <input type="text">
+                </label>
+            </p>
+
+            <p>
+                <label for="Email"> Digite seu Email
+                    <input type="email">
+                </label>
+            </p>
+            <p>
+                <label for="Senha"> Digite Sua Senha:
+                    <input type="password">
+                </label>
+            </p>
+            <p>
+                <label for="numero">Escolha seu número:
+                    <input type="range" id="numero" min="0" max="99999999999" value="0">
+                </label>
+                <span id="valor">(00) 00000-0000</span>
+            </p>
+        </div>
         <script>
             const rangeInput = document.getElementById('numero');
             const valorDisplay = document.getElementById('valor');
-    
-          
+
+
             function formatarComoTelefone(numero) {
-                const numeroString = numero.toString().padStart(11, '0'); 
-                const ddd = numeroString.slice(0, 2); 
-                const parte1 = numeroString.slice(2, 7); 
-                const parte2 = numeroString.slice(7); 
+                const numeroString = numero.toString().padStart(11, '0');
+                const ddd = numeroString.slice(0, 2);
+                const parte1 = numeroString.slice(2, 7);
+                const parte2 = numeroString.slice(7);
                 return `(${ddd}) ${parte1}-${parte2}`;
             }
-    
-            rangeInput.addEventListener('input', function() {
+
+            rangeInput.addEventListener('input', function () {
                 const numeroFormatado = formatarComoTelefone(rangeInput.value);
                 valorDisplay.textContent = numeroFormatado;
             });
         </script>
-    </p>
-    </div>
-    <div id="alinhado">
-        <h2> Nossos Tecnicos </h2>
-    </div>
-    <div id="alinhado">     
+        </p>
+        </div>
+        <div id="alinhado">
+            <h2> Nossos Tecnicos </h2>
+        </div>
+        <div id="alinhado">
             <div id="item">
                 <img src="https://pbs.twimg.com/media/En4KLXHXIAETqVk.jpg">
                 <p>Matheus Brasil</p>
             </div>
             <div id="item">
-                <img src="https://media.licdn.com/dms/image/C4D03AQEEcCr2TYBIlQ/profile-displayphoto-shrink_800_800/0/1517569532405?e=2147483647&v=beta&t=QzthhFvFuuno2HWAbGO_wWCKYpwbK89lPILbdQCKtWo" class="Tecnicos"> 
+                <img src="https://media.licdn.com/dms/image/C4D03AQEEcCr2TYBIlQ/profile-displayphoto-shrink_800_800/0/1517569532405?e=2147483647&v=beta&t=QzthhFvFuuno2HWAbGO_wWCKYpwbK89lPILbdQCKtWo"
+                class="Tecnicos">
                 <p>Vanderlai Ramos</p>
             </div>
             <div id="item">
-                <img src="https://i.ytimg.com/vi/nJo_0dVnk6Y/maxresdefault.jpg"> 
+                <img src="https://i.ytimg.com/vi/nJo_0dVnk6Y/maxresdefault.jpg">
                 <p>Eduardo Koffeneir</p>
             </div>
             <div id="item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw12swtJISzKJeqt4H_0qtedbJBU2Q9UCUlw&s">
                 <p>Davi Britto</p>
             </div>
-    </div>
-    <div id="conteiner">
-        <div id=item>       
-                <p><h1>Nosso Fundador</h1></p>
-                <p>Felipe Quebra Codigos</p>
-                <div id="text">
-                    <img src="https://dev-beta.quizur.com/storage/v1/render/image/public/imagens/20084847/73cecf4a-97f7-4417-bfa6-37f6ea200c24.png?width=800&quality=75">
-                    <p>Quebra Códigos é o fundador de nossa organização, sendo amplamente reconhecido por sua habilidade excepcional em decifrar e dominar códigos com maestria. Sua atuação visionária e dedicação à excelência técnica tornaram-se pilares fundamentais para o desenvolvimento e consolidação da nossa missão. Seu talento não apenas inspira os demais membros da equipe, como também estabelece 
-                        um padrão elevado de inovação, criatividade e comprometimento com a evolução constante da tecnologia.</p>
-                </div>
         </div>
     </div>
     
     
+    <div id="conteiner">
+        <div id=item>
+            <p>
+            <h1>Nosso Fundador</h1>
+            <p>Felipe Quebra Codigos</p>
+        </div>
+    </div>
+    <div id="text">
+        <img
+            src="https://dev-beta.quizur.com/storage/v1/render/image/public/imagens/20084847/73cecf4a-97f7-4417-bfa6-37f6ea200c24.png?width=800&quality=75">
+        <p>Quebra Códigos é o fundador de nossa organização, sendo amplamente reconhecido por sua habilidade
+            excepcional em decifrar e dominar códigos com maestria. Sua atuação visionária e dedicação à
+            excelência técnica tornaram-se pilares fundamentais para o desenvolvimento e consolidação da nossa
+            missão. Seu talento não apenas inspira os demais membros da equipe, como também estabelece
+            um padrão elevado de inovação, criatividade e comprometimento com a evolução constante da
+            tecnologia.</p>
+            
+    </div>
     
+
+
+
 
 
 
@@ -88,4 +123,5 @@
 
 
 </body>
+
 </html>

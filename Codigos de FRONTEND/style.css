@@ -1,26 +1,27 @@
-body
-    {
+    body
+        {
         
-        background: 
-            linear-gradient(rgb(27, 8, 49), rgba(0, 0, 0, 0.658)), 
-            url('https://media1.tenor.com/m/M4T6_KH_GWMAAAAd/calma-calabreso-calma-calma-calabreso.gif;');
-        background-size: cover;
-        background-position: center;
-        font: normal 15pt Calibri;
-        color: white;
+            background: 
+                linear-gradient(rgb(20, 0, 34), rgba(10, 0, 10, 0.548)), 
+                url('https://media1.tenor.com/m/M4T6_KH_GWMAAAAd/calma-calabreso-calma-calma-calabreso.gif;');
+            background-size: cover;
+            background-position: center;
+            font: normal 15pt Calibri;
+            color: white;
         
-    }
+        }
 
-#centro
-    {
-        text-align: center;
-        background-color: rgba(70, 14, 201, 0.384);
-        border-radius: 10px;
-        padding: 15px;
-        width: 500px;
-        margin: auto;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-    }
+    #centro
+        {
+            text-align: center;
+            background-color: rgba(70, 14, 201, 0.384);
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            margin-top: 50px;
+        }
 
     #alinhado 
         {
@@ -30,6 +31,7 @@ body
             gap: 40px;
             flex-wrap: wrap;
             padding: 20px;
+            margin: auto;
         }   
 
     #item
@@ -39,8 +41,8 @@ body
 
     #item img
         {
-            width: 255px;
-            height: 255px;
+            width: 200px;
+            height: 200px;
             margin: auto;
             border-radius: 1000px;
         }
@@ -48,19 +50,7 @@ body
         {
             margin-top: 10px;
             text-align: center;
-            font-size: 35px;
-        }
-
-
-    #conteiner
-        {
-            text-align: center;
-            background-color: rgba(70, 14, 201, 0.384);
-            border-radius: 100px;
-            padding: 15px;
-            width: 1000px;
-            margin: auto;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            font-size: 30px;
         }
 
     #text
@@ -72,6 +62,7 @@ body
             height: 300px;
             text-align: left;
             display: flex;
+            
         }
    
     #text p 
@@ -86,4 +77,68 @@ body
             width: 250px;
             height: 250px;
             border-radius: 1000px;
+        }
+    
+    #texto
+        {
+            font-size: 20px;
+        }
+    
+    #cabeçalho
+        {
+            text-align: center;
+        }
+
+    #cabeçalho2
+        {
+            text-align: center;
+            background-color: rgba(70, 14, 201, 0.384); 
+            width: 600px;
+            border-radius: 100px;
+            margin: auto;
+            padding: 5px;
+            box-shadow: black 3px 3px 10px;
+            
+            
+        }
+        
+        #cabeçalho2 h1
+        {
+            font: normal 50px Impact;
+            font-size: 50px;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 5px;   
+        }
+
+        #cabeçalho2 h2
+        {
+            font: normal 30px Impact;
+            font-size: 30px;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            margin-top: 5px;
+        }
+    
+        #cabeçalho3
+        {
+            font-size: 20px;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            line-height: 1;
+            padding: 15px;
+        }
+    
+        #conteiner
+        {
+            background-color: rgba(70, 14, 201, 0.774);
+            justify-content: center;
+            margin: auto;
+            padding: 1px;
+            width: 400px;
+            border-radius: 100px;
+            line-height: 0.5;
+            margin-bottom: -50px;       
+            transform: translate(0); 
+            box-shadow: rgba(0, 0, 0, 0.6);
         }
