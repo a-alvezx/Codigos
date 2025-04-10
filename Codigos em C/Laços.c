@@ -1,34 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <conio.h>
 
 int main()
 {
-	/*VARIAVEIS*/
-	int i, k, j;
-	
-	/*INICIO*/
-	system ("cls");
-	for ( k = 0 ; k <= 1 ; k++) {
-		printf ("\n");
-		for ( i = 1 ; i <= 5 ; i++) {
-			printf (" TABUADA DO %2d |", i+k*5);
-		}
+    int cont = 0;
+    char ch;
 
-		printf ("\n");
-		for (i = 1 ; i <= 5 ; i++)
-			printf ("_______________|");
-		printf ("\n");
-		for ( i = 1 ; i <= 10 ; i++) {
-			for ( j = 1 ; j <= 5 ; j++)
-				printf (" %2d x %2d = %2d  |", i, j+k*5, i*(j+k*5) );
-			printf ("\n");
-		}
-		for (i = 1 ; i <= 5 ; i++)
-			printf ("_______________|");
-		printf ("\n");
-	}
+    printf("Digite um bagulho aí: ");
+    
+    while ((ch = getche()) != '\r')  // '\r' é Enter
+    {
+        if (ch == '0')
+        {
+            printf(" -> Número 0 detectado!\n");
+            cont++;
+        }
+    }
 
-	system("pause");
-	return 0;
+    printf("\nVocê digitou %d zeros\n", cont);
+    return 0;
 }
+
