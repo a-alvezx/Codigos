@@ -17,50 +17,95 @@
             <p>
                 <label for="nome">
                     Digite seu nome:
-                    <input type="text">
+                    <input type="text" id="nome">
                 </label>
             </p>
 
             <p>
                 <label for="email">
                     Digite seu email:
-                    <input type="email">
+                    <input type="email" id="email">
                 </label>
             </p>    
             
             <p>
                 <label for="data">
                     Digite a data do evento:
-                    <input type="date">
+                    <input type="date" id="data">
                 </label>
             </p>
            
             <p>
                 <label for="genero">
                     Gênero: <br>
-                    <input type="radio"> Feminino 
-                    <input type="radio"> Masculino
-                    <input type="radio"> Outro: <input type="text">
+                    <input type="radio" id="fem"> Feminino 
+                    <input type="radio" id="mas"> Masculino
+                    <input type="radio" id="outro"> Outro: <input type="text" id="outro">
                 </label>
             </p>
         
             <p>
-                <div id="flex">
-                    <label for="interesses">
-                        Interesses: <br>
-                        <input type="checkbox"> Música 
-                        <input type="checkbox"> Dança 
-                        <input type="checkbox"> Teatro
-                        <input type="checkbox"> Cinema 
-                        <input type="checkbox"> Literatura 
-                        <input type="checkbox"> Jogos 
-                    </label>
-                </div>
+                <label for="interesses">
+                    Interesses: <br>
+                    <input type="checkbox" id="musica"> Música 
+                    <input type="checkbox" id="danca"> Dança 
+                    <input type="checkbox" id="teatro"> Teatro <br>
+                    <input type="checkbox" id="cinema"> Cinema 
+                    <input type="checkbox" id="literatura"> Literatura 
+                    <input type="checkbox" id="jogos"> Jogos   
+                </label>
             </p>
-
+            
+            <p>
+                <label for="estado">
+                    Estado: <br>
+                    <select name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </label>
+            </p>  
+            
+            <p>
+                <label for="comentario">
+                    Comentários: <br>
+                    <textarea id="comentario" rows="4" cols="50"></textarea>
+                </label>
+            </p>
+            
+            <p>
+                <label for="enviar">
+                    <input type="submit" id="enviar" value="Enviar">
+                </label>
+            </p>    
         </form>   
     </div>
-
+    
 
 </body>
 </html>
