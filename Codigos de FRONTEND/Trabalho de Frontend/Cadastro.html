@@ -1,146 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro Inicial</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="painel">
         <h1>Cadastro Inicial</h1>
         Boas vindas ao seu cadastro! <br>
-        Por favor, preencha a tabela abaixo<br><br>    
+        Por favor, preencha a tabela abaixo<br><br>
     </div>
+    <div id="das">
+        <div id="cadastro">
+            <form>
+                <p>
+                    <label for="nome">
+                        Digite seu nome: <br>
+                        <input type="text" id="nome">
+                    </label>
+                </p>
 
-    <div id="cadastro">
-        <form>
-            <p>
-                <label for="nome">
-                    Digite seu nome:
-                    <input type="text" id="nome">
-                </label>
-            </p>
+                <p>
+                    <label for="email">
+                        Digite seu email: <br>
+                        <input type="email" id="email">
+                    </label>
+                </p>
 
-            <p>
-                <label for="email">
-                    Digite seu email:
-                    <input type="email" id="email">
-                </label>
-            </p>    
-            
-            <p>
-                <label for="data">
-                    Digite a data do evento:
-                    <input type="date" id="data">
-                </label>
-            </p>
-           
-            <p>
-                <label for="genero">
-                    Gênero: <br>
-                    <input type="radio" id="fem"> Feminino 
-                    <input type="radio" id="mas"> Masculino
-                    <input type="radio" id="outro"> Outro: <input type="text" id="outro">
-                </label>
-            </p>
-        
-            <p>
-                <label for="interesses">
-                    Interesses: <br>
-                    <input type="checkbox" id="musica"> Música 
-                    <input type="checkbox" id="danca"> Dança 
-                    <input type="checkbox" id="teatro"> Teatro <br>
-                    <input type="checkbox" id="cinema"> Cinema 
-                    <input type="checkbox" id="literatura"> Literatura 
-                    <input type="checkbox" id="jogos"> Jogos   
-                </label>
-            </p>
-            
-            <p>
-                <label for="estado">
-                    Estado: <br>
-                    <select name="estado">
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </label>
-            </p>  
-            
-            <p>
-                <label for="comentario">
-                    Comentários: <br>
-                    <textarea id="comentario" rows="4" cols="50"></textarea>
-                </label>
-            </p>
-            
-            <p>
-                <label for="enviar">
-                    <input type="submit" id="enviar" value="Enviar">
-                </label>
-            </p>    
-        </form>   
+                <p>
+                    <label for="data">
+                        Digite a data do evento: <br>
+                        <input type="date" id="data">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="genero">
+                        Gênero: <br>
+                        <input type="radio" id="fem"> Feminino
+                        <input type="radio" id="mas"> Masculino <br>
+                        <input type="radio" id="outro"> Outro: <input type="text" id="outro">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="interesses">
+                        Interesses: <br>
+                        <input type="checkbox" id="musica"> Música
+                        <input type="checkbox" id="danca"> Dança
+                        <input type="checkbox" id="teatro"> Teatro <br>
+                        <input type="checkbox" id="cinema"> Cinema
+                        <input type="checkbox" id="literatura"> Literatura
+                        <input type="checkbox" id="jogos"> Jogos
+                    </label>
+                </p>
+
+                <p>
+                    <label for="estado">
+                        Estado: <br>
+                        <select name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="comentario">
+                        Comentários: <br>
+                        <textarea id="comentario" rows="4" cols="50"></textarea>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="enviar">
+                        <input type="submit" id="enviar" value="Enviar">
+                    </label>
+                </p>
+            </form>
+        </div>
+        <br>
+
+        <div id="tabela">
+            <h2>Tabela de Aulas</h2>
+            <table border="15"
+                <thead>
+                    <tr>
+                        <th>Aula de Programação</th>
+                        <th>Dia</th>
+                        <th>Local</th>
+                        <th>Horáio</th>
+                        <th>Professor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Front-end</td>
+                        <td>24/04</td>
+                        <td>Universidade Católica</td>
+                        <td>14:00</td>
+                        <td>André</td>
+                    </tr>
+                    <tr>
+                        <td>Back-End</td>
+                        <td>25/04</td>
+                        <td>Universidade Católica</td>
+                        <td>17:30</td>
+                        <td>Carlos</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>26/04</td>
+                        <td>Universidade Católica</td>
+                        <td>10:00</td>
+                        <td>Alexandre</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <br>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Aula de Programação</th> 
-                <th>Dia</th>
-                <th>Local</th>
-                <th>Horáio</th>
-                <th>Professor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Front-end</td>
-                <td>24/04</td>
-                <td>Universidade Católica</td>
-                <td>14:00</td>
-                <td>André</td>
-            </tr>
-            <tr>
-                <td>Back-End</td>
-                <td>25/04</td>
-                <td>Universidade Católica</td>
-                <td>17:30</td>
-                <td>Carlos</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>26/04</td>
-                <td>Universidade Católica</td>
-                <td>10:00</td>
-                <td>Alexandre</td>
-            </tr>
-        </tbody>
-        <h2>Tabela de Aulas</h2>
-    
-    </table>
 </body>
+
 </html>
