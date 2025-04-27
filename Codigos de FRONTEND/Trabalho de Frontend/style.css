@@ -1,30 +1,36 @@
 body
 {
-    background-color: rgb(212, 232, 233);
+    background-color: rgb(237, 252, 253);
     font-size: 15px;
     font: Calibri, sans-serif;  
 }
 
 #painel
 {
-    background-color: rgba(54, 169, 214, 0.356);
+    background-color: rgb(152, 206, 228);
     margin: auto;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     font: normal 15pt Impact;   
     border-radius: 20px;
     margin-bottom: 50px;
+    box-shadow: 1px 15px 10px rgba(0, 0, 0, 0.384);
+    border: solid;
 }   
+
 
 #das
 {
     display: flex;
     justify-content: center;
-    background-color: rgba(54, 169, 214, 0.616);
     margin: auto;
     width: 1000px;
     padding: 25px;
     border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(215, 243, 245);
+    box-shadow: 1px 15px 10px rgba(0, 0, 0, 0.384);
+    border: solid;
     
     
 }
@@ -33,6 +39,8 @@ body
 {
     font: normal 13pt Impact;
     margin: 20px;
+    padding: 10px;
+    width: 1000px;
 }
 input[type="text"], input[type="date"], input[type="email"]
 {
@@ -42,25 +50,39 @@ input[type="text"], input[type="date"], input[type="email"]
 textarea
 {
     border-radius: 10px;
+    border: solid;
 }
 select
 {
     border-radius: 20px;
+    border: solid 2px rgb(0, 0, 0);
+}
+input[type="submit"]
+{
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.384);
+    width: 150px;
 }
 #tabela
 {
     margin: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, sans-serif;
+    padding: 10px;
+    width: 1000px
 }
 #tabela h2
 {
-    background-color: rgb(54, 169, 214);
+    background-color: rgb(152, 206, 228);
     padding: 10px;
     text-align: center;
     border-radius: 20px;
-    
+    font-weight: normal;
+    box-shadow: 1px 15px 10px rgba(0, 0, 0, 0.384);
+    border: solid;
 }
-td
+td, th
 {
     font-size: 15px;
     padding: 15px;
@@ -69,12 +91,31 @@ td
 }
 th
 {
-    font-size: 15px;
-    padding: 15px;
+    background-color: rgb(152, 206, 228);
+    font-weight: normal;
+    font-size: 17px;
    
 }
 table
 {
     border-radius: 20px;
-    border: 10px;
+    background-color: rgb(255, 255, 255);
+    border-collapse: separate;
+    border-spacing: 0px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: solid 2px rgb(0, 0, 0);
+    
+}
+#rodape
+{
+    background-color:rgb(152, 206, 228);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: normal;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    border: solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
