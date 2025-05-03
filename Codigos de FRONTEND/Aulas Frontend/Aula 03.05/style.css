@@ -1,0 +1,36 @@
+body
+{
+    background-color: aliceblue;
+    font-family: sans-serif;
+    color: white;
+}
+
+#cabecalho
+{
+    margin: auto;
+    border: solid 8px;
+    text-align: center;
+    border-radius: 200px;
+    width: 500px;
+    margin-top: 20px;
+
+
+}
+#box p
+{
+    width: 450px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#box
+{
+    background-color: rgb(36, 36, 143);
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
