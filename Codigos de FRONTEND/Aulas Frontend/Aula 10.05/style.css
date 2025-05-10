@@ -1,0 +1,78 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+img:hover
+{
+    transition: 2s ease;
+    cursor: pointer;
+    animation: infinite-spinning 1s forwards;
+    transform: scale(2);
+}
+img:not(:hover)
+{
+    animation: volta 1s forwards;
+}
+img 
+{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    outline: solid 5px white;
+    transition: 2s ease;
+    transform: rotate(0deg) scale(1);
+}
+header, footer
+{
+    background-color: bisque;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container 
+{
+    padding: 1rem; /*Define um tamanho*/
+}
+
+.card
+{
+    background-color: antiquewhite;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    margin: 0.5rem;
+    width: 200px;
+}
+
+/*Flebox*/
+
+.container
+{
+    display: flex;
+    padding: 1rem;
+    /* flex-direction: row; -> Já é o padrão do Flex, n necessita colocar!!!*/
+    align-items: center; /*Alinha os itens no centro da pagina*/
+    justify-content: center; /*Alinha os itens dentro do container*/
+    flex-wrap: wrap; /*Quebra em varias linhas enquanto diminui*/
+    /*Site para aprender Flex Box: Flexbox Froggy
+    Site para aprender Grid: Grid Garden*/
+}
+
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+    to {
+      transform: rotate(360deg) scale(2);
+    }
+  }
+
+  @keyframes volta {
+    from {
+      transform: rotate(360deg) scale(2);
+    }
+    to {
+      transform: rotate(0deg) scale(1);
+    }
+  }
