@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula 06</title>
+</head>
+<body style="text-align: center;">
+    <h1>Salve Quebrada</h1>
+    <p>Slg no script</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        document.writeln(`A soma entre ${n1} e ${n2} é igual a ${s} <br>`)
+
+        var nome = prompt('Digite seu nome: ')
+        document.writeln(`Olá, ${nome} <br>`)
+        document.writeln(`O seu tem ${nome.length} letras <br>`) //Tamanho da string
+        document.writeln(`O seu nome fica assim: ${nome.toUpperCase()} em maiusculas <br>`) //Letra maiusculas
+        document.writeln(`O seu nome fica assim: ${nome.toLowerCase()} em minusculas <br>`) //Letras minusculas
+        // 'var'.toFixed(2) -> Formata o real para duas casas decimais
+        // 'var'.toFixed(2).replace('.',',') troca o ponto por uma virgula
+        // 'var'.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) -> Serve para formatar em moeda
+
+    </script> 
+</body>
+</html>
