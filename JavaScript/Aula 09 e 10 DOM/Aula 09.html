@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg">Clique em Mim</div>
+    <!--Oque é o DOM?
+    DOM -> Document Object Model
+    Conjunto de projetos dentro do navegador que da acesso a componentes internos do site 
+    -->
+    <script>
+        var d = document.getElementById('msg')
+        var corpo = document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        corpo.style.background = 'red'
+        document.writeln(p1.innerHTML) //puxa o html do segundo paragrafo
+        document.writeln(p1.innerText) //Puxa o texto do segundo paragrafo 
+        //d.style.background = 'blue'
+        //d.innerText = 'Aloo carai'
+        
+        
+    </script>
+</body>
+</html>
