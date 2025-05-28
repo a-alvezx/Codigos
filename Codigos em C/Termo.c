@@ -56,7 +56,7 @@ int main(){
     	}while ( acerto == 0 && tent <= 5);
 		printf ("Quer continuar? [S/N]");
 		loop = getche();
-	}while ( loop = 'S' && loop = 's');
+	}while ( loop == 'S' && loop == 's');
 	
 	return 0;
 }
