@@ -32,11 +32,28 @@ function verificar(){
                 img.setAttribute( 'src', 'velho.jpg')
             } else if ( idade > 100 ){
                 img.setAttribute( 'src', 'mds.jpg')
-                var idade = 'muitos'
             }
         } else {
             genero = 'Mulher'
-            
+            if ( idade == 0 ){
+                img.setAttribute( 'src', '0anos.jpg')
+                genero = 'um espermatozoide'
+                idade = 'nenhum'
+            } else if (idade >= 1 && idade <= 5 ) {
+                img.setAttribute( 'src', 'bebem.jpg')
+            } else if ( idade >= 6 && idade <= 12 ){
+                img.setAttribute( 'src', 'criancam.jpeg')
+            } else if ( idade >= 13 && idade < 18 ){
+                img.setAttribute( 'src', 'adolem.jpg')
+            } else if ( idade >= 18 && idade < 35){ 
+                img.setAttribute( 'src', 'jovemm.jpg')
+            } else if ( idade >= 35 && idade < 60 ){
+                img.setAttribute( 'src', 'adultom.jpg')
+            } else if ( idade > 60 && idade < 100 ){
+                img.setAttribute( 'src', 'idosom.jpg')
+            } else if ( idade > 100 ){
+                img.setAttribute( 'src', 'mdsm.jpeg')
+            }
         }
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`;
         res.appendChild(img);
