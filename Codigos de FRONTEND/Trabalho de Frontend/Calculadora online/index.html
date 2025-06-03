@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Online</h1>
+    </header>
+
+    <section id="calculadora">
+        <div id="visor">
+            <h1 id="display"></h1>
+        </div>
+        <section id="butoes">
+            <div id="num">
+                <div id="one" onclick="one(1)"><h1>1</h1></div>
+                <div id="two" onclick="one(2)"><h1>2</h1></div>
+                <div id="three" onclick="one(3)"><h1> 3</h1></div>
+                <div id="four" onclick="one(4)"><h1> 4</h1></div>
+                <div id="five" onclick="one(5)"><h1> 5</h1></div>
+                <div id="six" onclick="one(6)"><h1> 6</h1></div>
+                <div id="seven" onclick="one(7)"><h1> 7</h1></div>
+                <div id="eight" onclick="one(8)"><h1> 8</h1></div>
+                <div id="nine" onclick="one(9)"><h1> 9</h1></div>
+                <div id="dot" onclick="one('.')"><h1> .</h1></div>
+                <div id="zero" onclick="one(0)"><h1> 0</h1></div>
+                <div id="equal" onclick="calcular('=')"><h1> =</h1></div>
+            </div>
+            <div id="math">
+                <div onclick="math('+')"><h1>+</h1></div>
+                <div onclick="math('-')"><h1>-</h1></div>
+                <div onclick="math('*')"><h1>x</h1></div>
+                <div onclick="math('/')"><h1>/</h1></div>
+                <div onclick="math('^')"><h1>^</h1></div>
+                
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy;Alvess</p>
+    </footer>
+</body>
+</html>
