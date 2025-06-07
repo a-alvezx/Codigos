@@ -2,7 +2,13 @@ body {
     font-family: sans-serif;
     text-align: center;
 }
-
+#bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 79vh;
+}
 #calculadora{
     display: flex;
     align-items: center;
@@ -12,8 +18,8 @@ body {
     height: 600px;
     background-color: rgb(163, 163, 170);
     border-radius: 30px;
-    margin: auto;
     box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.685);
+    transform: scale(0.8) ;
 }
 
 #visor {
@@ -92,4 +98,35 @@ body {
     background-color: rgba(231, 231, 231, 0.849);
     transform: scale(0.9);
     transition: 0.1s;
+}
+footer{
+    background-color: aliceblue;
+    height: 100px;
+    margin: -20px;
+}
+header{
+    background-color: aqua;
+    height: 100px;
+    margin: -20px;
+}
+#button {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100px;
+    padding: 5px;
+
+}
+#bolean {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: aqua;
+    justify-self: flex-end ;
+}
+#bolean:active{
+    justify-self: flex-end;
+    transition: 0.2s;
 }
