@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História de Amor</title>
+    <link rel="stylesheet" href="yes_style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>André & Anna Júlia</h1>
+        <p>Uma história de amor escrita nas estrelas</p>
+    </header>
+
+    <main class="timeline">
+
+        <div class="event left">
+            <div class="content">
+                <span class="date">Agosto de 2024</span>
+                <h2>O Início de Tudo</h2>
+                <p>O dia em que te mandei a primeira mensagem. Naquele dia eu tomei coragem e falei com a garota mais linda e maravilhosa que eu conhecia. Até hoje lembro da sensação de te mandar aquela mensagem e lembro da sensação de quando você me respondeu. Eu estava nas nuvens kkk. </p>
+                <img src="agosto.jpeg" alt="Primeira mensagem!">
+            </div>
+        </div>
+
+        <div class="event right">
+            <div class="content">
+                <span class="date">Setembro de 2024</span>
+                <h2>Nosso Primeiro Beijo</h2>
+                <p>Depois de algum tempo juntos, finalmente nos beijamos! Naquele segundo, uma parte de mim estava nervosa, sem saber o que você pensaria. Olhando para trás, parece algo pequeno, mas foi o verdadeiro começo da nossa história. E a melhor parte é que, até hoje, cada beijo seu ainda carrega a mesma magia e a alegria daquele primeiro.</p>
+                <img src="newyear.jpeg" alt="Primeiro beijo">
+            </div>
+        </div>
+
+        <div class="event left">
+            <div class="content">
+                 <span class="date">29 de novembro de 2024</span>
+                <h2>O pedido... 😱</h2>
+                <p>Apesar dos contratempos que enfrentamos, o maior desafio para mim era superar o meu próprio medo para te pedir em namoro. Minha cabeça estava cheia de dúvidas: o que você diria? E sua família? E, principalmente, seu pai? Mesmo com toda essa paranoia, juntei a coragem que nem sabia que tinha e fiz o pedido. Olhando para trás, é muito engraçado lembrar do pavor que eu sentia da sua família kkkkk, mal sabendo que na verdade eu estava prestes a ser acolhido por pessoas tão incríveis.</p>
+                <img src="novembro.jpeg" alt="O pedido de namoro">
+            </div>
+        </div>
+        
+        <div class="event right">
+            <div class="content">
+                 <span class="date">12 de junho de 2025</span>
+                <h2>Nosso Futuro...</h2>
+                <p>É depois de quase 7 meses juntos, vamos passar nosso primerio dia dos namorados, o primerio de muito! Apesar de a gente provavelmente não se ver no dia, quero que você saiba que durante esses 7 messes você me fez a pessoa mais feliz desse universo. Cada momento ao seu lado é completa magia, cada beijo seu ainda me arrepia, e cada "Eu te amo" que você me diz me traz alegria. Me sinto o homem mais sortudo do mundo em ter uma mulher tão maravilhosa como você ao meu lado. Cada momento ou sentimento ruim que eu passei some quando eu recebo uma simples messagem sua. Quero que você saiba que sou capaz de mover montanhas por você. Conte comigo em qualquer situação, nos momentos alegres, nos momentos tristes, na saúde ou na doença, sempre vou estar ao seu lado. Eu te amo Anna Júlia Moura, e amo cada detalhe seu. Amo seu corpo, amo seu sorriso, amo seu humor duvidoso kkkk, amo seu jeito preocupada, amo tudo relacionado a você. Espero que possamos dividi ainda mais momentos incriveis, estamos no começo de uma nova jornada, evoluindo, envelhecendo e amadurecendo juntos. A melhor parte da minha vida é poder passar ela com você!!! </p>
+                <img src="junho.jpeg" alt="Olhando para o futuro">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>Feliz Dia dos Namorados!</h2>
+        <p>Te amo mais do que as palavras podem expressar.</p>
+    </footer>
+
+    <script>
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function revealEvents() {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const rect = event.getBoundingClientRect();
+                if (rect.top < (window.innerHeight || document.documentElement.clientHeight) - 100) {
+                    event.classList.add('visible');
+                }
+            });
+        }
+
+
+        window.addEventListener('scroll', revealEvents);
+        
+        revealEvents();
+    </script>
+
+</body>
+</html>

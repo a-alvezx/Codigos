@@ -1,0 +1,203 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+        :root {
+            --cor-principal: #c31b1b;
+            --cor-fundo: #dbbcbc;
+            --cor-texto: #333;
+            --cor-destaque: #ff4d4d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        header.hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('inicio.jpeg') center center/cover no-repeat;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header.hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header.hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Linha do Tempo da História */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* A linha central da timeline */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--cor-destaque);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+            animation: move-line 6s linear forwards;
+        }
+        
+        @keyframes move-line {
+            0% { height: 0; }
+            100% { height: 100%; }
+        }
+
+        /* Container de cada evento */
+        .event {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            opacity: 0; /* Começa invisível para a animação JS */
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        /* Adiciona a classe 'visible' via JS para animar */
+        .event.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Eventos da esquerda */
+        .left {
+            left: 0;
+            text-align: right;
+        }
+
+        /* Eventos da direita */
+        .right {
+            left: 50%;
+            text-align: left;
+        }
+        
+        /* O "círculo" na linha do tempo */
+        .event::after {
+            content: '❤️';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: var(--cor-fundo);
+            font-size: 20px;
+            top: 35px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .right::after {
+            left: -16px;
+        }
+        
+        /* Conteúdo do evento */
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--cor-principal);
+            font-size: 1.8rem;
+        }
+        
+        .content .date {
+            font-weight: bold;
+            color: var(--cor-destaque);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: var(--cor-principal);
+            color: white;
+        }
+        
+        footer h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        footer p {
+            font-size: 1.2rem;
+        }
+
+        /* Responsividade para telas menores */
+        @media screen and (max-width: 768px) {
+            header.hero h1 {
+                font-size: 2.5rem;
+            }
+            header.hero p {
+                font-size: 1.2rem;
+            }
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .event {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .event::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .left::after, .right::after {
+                left: 20px;
+            }
+            
+            .left, .right {
+                left: 0%;
+                text-align: left;
+            }
+        }
