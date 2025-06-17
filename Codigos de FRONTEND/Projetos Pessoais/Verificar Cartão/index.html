@@ -10,10 +10,25 @@
 <body>
     <header>  
         <h1>Verifique se seu cartão foi clonado!!!</h1>
+        <h2>SITE FICTICIO. Não insira seus dado!</h2>
     </header>
 
     <section>
         <div id="card">
+            <p>
+                <label for="typecard"> <!--
+                    Mostrar img do tipo de cartão escolhido no css
+                    -->
+                    Escolha o tipo de cartão:  
+                    <select name="typecard" id="typecard"> <!--Buscar valor do select no js-->
+                        <option value="padrão" selected>Escolha</option> <!--Opção padrão, se escolhida mostra mensagem de erro-->
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Elo">Elo</option>
+                        <option value="Hipercard">Hipercard</option>
+                    </select>
+                </label>
+            </p>
             <p>
                 <label for="numero_do_cartao">
                     Digite o número do cartão:
@@ -40,15 +55,37 @@
             </P>
             <div id="button">
                 <p>
-                    <label for="submit">
-                        <input type="button" id="submit" value="Enivar">
-                    </label>
+                    <input type="button" id="submit" value="Enivar"  onclick="verificar()">
                 </p>
             </div>
         </div>
         <div id="cartao">
-            <p>teste</p>
-        </div>
+            <div id="number_card">
+                <p id="nome_titular">
+                    *Nome do titular*
+                </p>
+            </div>
+            <div id="security">
+                <div>
+                    <p>
+                        xxxx-xxxx-xxxx-xxxx
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        xx/xx
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        xxx
+                    </p>
+                </div>
+                <div id="img">
+                    
+                </div>
+            </div>
+        </div> 
     </section>
 
     <footer>
