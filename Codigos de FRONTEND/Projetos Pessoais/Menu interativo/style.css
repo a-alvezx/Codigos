@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Menu lateral do site */
+.open-menu{
+    display: block;
+    padding: 20px;
+    font-size: 20pt;
+    z-index: 8888;
+}
+.open-menu:hover{
+    cursor: pointer;
+}
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: rgba(145, 139, 139, 0);
+    transition: .3s;
+    height: 100vh;
+}
+.menu-lateral nav ul li{
+    padding: 20px;
+    font-size: 20pt;
+    list-style: none;
+}
+i{
+    color: black;
+}
+.close-menu{
+    text-align: right;
+    padding: 20px;
+    font-size: 15pt;
+    display: none;
+    cursor: pointer;
+}
+.menu-lateral .text{
+    display: none;
+    padding: 0px 0px 0px 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu-lateral.on{
+    width: 66px;
+    background-color: white;
+}
+.parte-superior{
+    display: flex;
+    justify-content: space-between;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.486);
+    position: fixed;
+    top: 0;
+    z-index: 7777;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    transition: .3s;
+}
+.menu-lateral.on ~ .overlay{
+    display: block;
+}
+.menu-lateral nav ul li:hover{
+    cursor: pointer;
+    background-color: azure;
+}
+.menu-lateral.menu-on{
+    width: 30%;
+    background-color: white;
+}
+.menu-lateral.menu-on .text{
+    display: inline;
+}
+.menu-lateral.menu-on ~ .overlay{
+    display: block;
+}
+.menu-lateral.menu-on .close-menu{
+    display: block;
+}
+/*********************************/
+
+/* CSS do site */
+.pagina-principal{
+    width: 100%;
+}
+.paineis-de-exemplo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.paineis-de-exemplo div{
+    width: 200px;
+    background-color: aliceblue;
+    height: 200px;
+}
+.banner-de-teste{
+    background-color: aqua;
+    text-align: center;
+}
