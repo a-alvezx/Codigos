@@ -101,15 +101,60 @@ a{
 }
 .paineis-de-exemplo{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 150px; 
 }
-.paineis-de-exemplo div{
-    width: 200px;
-    background-color: aliceblue;
-    height: 200px;
+.paineis-de-exemplo div:not(.conteudo){
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.308);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    transition: .3s;
+    flex-direction: column;
+}
+.paineis-de-exemplo img{
+    width: 50px;
+}
+.painel1 {
+    background: linear-gradient(to bottom right, rgb(211, 108, 80), rgb(239, 172, 63) );
+    color: white;
+}
+.painel2 {
+    background:linear-gradient(to bottom right, rgb(59, 93, 145), rgb(35, 161, 193));
+    color: white;
+}
+.painel3{
+    background: linear-gradient(to bottom right, rgb(255, 245, 60), rgb(255, 238, 107) );
 }
 .banner-de-teste{
-    background-color: aqua;
+    background: linear-gradient(to right bottom, rgb(2, 48, 127), aqua);
     text-align: center;
+    height: 200px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-de-teste h1, .banner-de-teste i{
+    font-size: 50px;
+    color: white;
+}
+footer{
+    height: 100px;
+}
+.paineis-de-exemplo div:hover:not(.conteudo){
+    height: 300px;
+    transform: scale(1.1);
+    justify-content: space-between;
+    padding: 30px;
+}
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
