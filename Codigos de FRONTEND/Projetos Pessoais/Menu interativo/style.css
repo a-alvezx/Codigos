@@ -73,6 +73,16 @@ a{
     display: none;
     transition: .3s;
 }
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.486);
+    position: fixed;
+    top: 0;
+    z-index: 7777;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    transition: .3s;
+}
 .menu-lateral.on ~ .overlay{
     display: block;
 }
@@ -93,6 +103,7 @@ a{
 .menu-lateral.menu-on .close-menu{
     display: block;
 }
+
 /*********************************/
 
 /* CSS do site */
@@ -115,6 +126,7 @@ a{
     padding: 0px 40px;
     transition: .3s;
     flex-direction: column;
+    overflow: hidden;
 }
 .paineis-de-exemplo img{
     width: 50px;
@@ -138,23 +150,87 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .banner-de-teste h1, .banner-de-teste i{
     font-size: 50px;
     color: white;
 }
-footer{
-    height: 100px;
-}
 .paineis-de-exemplo div:hover:not(.conteudo){
     height: 300px;
     transform: scale(1.1);
-    justify-content: space-between;
-    padding: 30px;
+    justify-content: flex-start;
+    padding: 30px 50px;
+    gap: 30px;
 }
 .conteudo{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+.ptext{
+    display: none;
+}
+.paineis-de-exemplo div:hover:not(.conteudo) .ptext{
+    display: block;
+}
+footer{
+    background: linear-gradient(to right bottom, rgb(2, 48, 127), aqua);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    height: 100px;
+}
+.info{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.box-de-info{
+    width: 200px;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;    
+    border-radius: 30px;
+    display: flex;
+    z-index: 99999;
+    animation: myAnim 500ms ease 0s 1 normal forwards;
+}
+.box-de-info.info{
+    display: none;
+}
+@keyframes myAnim {
+	0% {
+		transform: translateX(-100px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+.box-de-info.info ~ .overlay2{
+    display: none;
+    z-index: 66666;
+}
+.text-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-confirmar input {
+    width: 100px;
+    margin-top: 10px;
+    height: 30px;
+    background-color:  rgb(2, 48, 127);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }

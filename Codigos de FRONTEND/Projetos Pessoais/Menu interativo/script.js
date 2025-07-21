@@ -3,6 +3,16 @@ let menu = document.getElementById('menu')
 let close_menu = document.getElementById('btn-close-menu')
 let btn_menu = document.getElementById('btn-menu')
 let btn_overlay = document.getElementById('btn-overlay')
+let btn_info = document.getElementById('btn-info')
+let info = document.getElementById('box-info')
+let info_overlay = document.getElementById('btn-overlay2')
+
+btn_info.addEventListener('click', () =>{
+    info.classList.add('info')
+})
+info_overlay.addEventListener('click', () =>{
+    info.classList.add('info')
+})
 
 menu.addEventListener('mouseover', () =>{
     menu.classList.add('on')
